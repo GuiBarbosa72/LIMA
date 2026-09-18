@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <label for="nome">Nome </label>
+            <input type="text" id="nome" name="nome" placeholder="Informe seu nome." required>
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Informe seu E-mail." required>
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Informe sua senha." required>
+            <br>
+            <label for="date">Data</label>
+            <input type="date" name="date" id="date" placeholder="Informe a data." required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferências: </legend>
+            <p>Informe sua cor favorita:</p>
+            <label><input type="radio" name="cor">Azul</label>
+            <label><input type="radio" name="cor">Vermelho</label>
+            <p>Informe quais frutas você quer:</p>
+            <label><input type="checkbox" name="fruta">Maçã</label>
+            <label><input type="checkbox" name="fruta">Uva</label>
+            <label><input type="checkbox" name="fruta">Banana</label>
+            <br>
+            <br>
+            <label for="idioma">Idioma:</label>
+            <select name="Idioma" id="idioma">Selecione:
+            <option value="pt">Português</option>
+            <option value="en">Inglês</option>
+            </select>
+            <br>
+            <br>
+            <label for="sugestoes">Sugestões:</label>
+            <br>
+            <textarea name="sugestoes" id="sugestoes"></textarea>
+        </fieldset>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
